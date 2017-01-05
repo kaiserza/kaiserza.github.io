@@ -47,9 +47,9 @@
 
 		#top-section {
 			height:100vh;
-			background: url("images/hid-animation-blue.gif") fixed;
+			/*background: url("images/hid-animation-blue.gif") fixed;
 			background-repeat: no-repeat;
-			background-size: cover;
+			background-size: cover;*/
 		}
 
 		.dropdown-main-homepage {
@@ -124,6 +124,40 @@
 			margin-right:1em;
 		}
 
+		#middle-section-petroleum {
+			background-color:white;
+			float:left;
+			width:70%;
+			padding:5%;
+		}
+
+		#middle-section-petroleum ul li {
+			display:inline-block;
+			font-size:2rem;
+			font-family:'universelse-regular';
+			margin-right:1em;
+			color: blue;
+		}
+
+		#blue-circle {
+		    height: 10rem;
+		    width: 10rem;
+		    border-radius: 50%;
+		    background: url("images/oilrefinery.jpg");
+		    background-size:cover;
+		}
+
+		#blue-circle-2 {
+		    height: 5rem;
+		    width: 5rem;
+		    border-radius: 50%;
+		    background: url("images/oilrefinery.jpg");
+		}
+
+		#blue-circle-text {
+			display: none;
+		}
+
 	</style>
 </head>
 <body>
@@ -149,19 +183,13 @@
 		</div>
 
 
-		<div class="dropdown-main-homepage">
+		<div id="middle-section-petroleum">
 				
-				<h1 class="first-page-second-word"><span id="getting">GETTING</span> <span id="into">INTO</span> 
-				<br>
-				<span id="your">YOUR</span> 
-				<br>
-				<a href="petrochemicals.html"><span id="office">OFFICE</span></a> 
-				<br>
-				<span id="has">HAS</span> <span id="never">NEVER</span> 
-				<br>
-				<span id="been">BEEN</span> <span id="so">SO</span> 
-				<br>
-				<span id="easy">EASY</span>.</h1>
+			<ul>
+				<li id="blue-circle"><a href=""></a></li>
+				<li id="blue-circle-text">Testing 1 2 3 mic check</li>
+				<li id="blue-circle-2"><a href=""></a></li>
+			</ul>
 				
 		</div>
 
@@ -192,79 +220,11 @@
 
 <script type="text/javascript">
 
-$("#getting").hover(
-	function() {
-		$(this).text("WE CONTROL"); 
-	}, function() {
-		$(this).text("GETTING");
-	}
-);
-
-$("#into").hover(
-	function() {
-		$(this).text("BODIES AND"); 
-	}, function() {
-		$(this).text("INTO");
-	}
-);
-
-$("#your").hover(
-	function() {
-		$(this).text("DATA USING"); 
-	}, function() {
-		$(this).text("YOUR");
-	}
-);
-
-$("#office").hover(
-	function() {
-		$(this).text("PETROCHEMICALS"); 
-	}, function() {
-		$(this).text("OFFICE");
-	}
-);
-
-$("#has").hover(
-	function() {
-		$(this).text("AND INTEGRATED"); 
-	}, function() {
-		$(this).text("HAS");
-	}
-);
-
-$("#never").hover(
-	function() {
-		$(this).text("CIRCUITS AS"); 
-	}, function() {
-		$(this).text("NEVER");
-	}
-);
-
-$("#been").hover(
-	function() {
-		$(this).text("SOPHISTICATED"); 
-	}, function() {
-		$(this).text("BEEN");
-	}
-);
-
-$("#so").hover(
-	function() {
-		$(this).text("SURVEILLANCE"); 
-	}, function() {
-		$(this).text("SO");
-	}
-);
-
-$("#easy").hover(
-	function() {
-		$(this).text("TECHNOLOGIES"); 
-	}, function() {
-		$(this).text("EASY");
-	}
-);
-
-
+$('#blue-circle').click(function() {
+     $('.blue-square').fadeOut();
+  }, function() {
+     $('.blue-square').fadeIn();
+  });
 
 
 </script>

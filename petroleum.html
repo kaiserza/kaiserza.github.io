@@ -47,9 +47,6 @@
 
 		#top-section {
 			height:100vh;
-			/*background: url("images/hid-animation-blue.gif") fixed;
-			background-repeat: no-repeat;
-			background-size: cover;*/
 		}
 
 		.dropdown-main-homepage {
@@ -71,14 +68,14 @@
 			float:right;
 			height:100vh;
 			width:10%;
-			background-color: blue;
+			/*background-color: blue;*/
 		}
 
 		.left-sidebar-home {
 			float:left;
 			width:10%;
 			height:100vh;
-			background-color: blue;
+			/*background-color: blue;*/
 		}
 
 		.first-page-first-word {
@@ -131,31 +128,67 @@
 			padding:5%;
 		}
 
+		#middle-section-petroleum ul {
+			list-style: none;
+		}
+
 		#middle-section-petroleum ul li {
-			display:inline-block;
 			font-size:2rem;
 			font-family:'universelse-regular';
 			margin-right:1em;
 			color: blue;
+			margin-top:1em;
+			margin-bottom:2em;
+			cursor: pointer;
 		}
 
 		#blue-circle {
-		    height: 10rem;
-		    width: 10rem;
+		    height: 20rem;
+		    width: 20rem;
 		    border-radius: 50%;
 		    background: url("images/oilrefinery.jpg");
 		    background-size:cover;
 		}
 
-		#blue-circle-2 {
-		    height: 5rem;
-		    width: 5rem;
-		    border-radius: 50%;
-		    background: url("images/oilrefinery.jpg");
+		#blue-rect {
+			background: url("images/oilrefinery.jpg");
+			height:20rem;
+			color:white;
+			font-family:'polskuregular';
+			font-size:10em;
+			text-align: center;
+			background-size:cover;
+			margin-bottom:2rem;
+			cursor: pointer;
 		}
 
-		#blue-circle-text {
+		#blue-rect-2 {
+		    background: url("images/oilrefinery.jpg");
+			color:white;
+			font-family:'polskuregular';
+			font-size:7em;
+			padding:2em 0em 2em 0;
+			text-align: center;
+			background-size:cover;
+			margin-bottom:2rem;
+			cursor: pointer;
+
+		}
+
+		#blue-rect-text {
 			display: none;
+			color:blue;
+			font-size:2rem;
+			font-family: 'universelse-regular';
+			margin-bottom:2rem;
+		}
+
+		#blue-rect-text-2 {
+			display: none;
+			color:blue;
+			font-size:2rem;
+			font-family: 'universelse-regular';
+			margin-bottom:2rem;
 		}
 
 	</style>
@@ -176,28 +209,24 @@
 	<div id="top-section">
 		<div class="left-sidebar-home">
 			<div class="vertical-container">
-				<div id="triangle-bottomright">
-					<br>
-				</div>
 			</div>
 		</div>
 
 
 		<div id="middle-section-petroleum">
 				
-			<ul>
-				<li id="blue-circle"><a href=""></a></li>
-				<li id="blue-circle-text">Testing 1 2 3 mic check</li>
-				<li id="blue-circle-2"><a href=""></a></li>
-			</ul>
+			<div>
+				<div id="blue-rect">OIL</div>
+				<div id="blue-rect-text">The basic material in <a href="hid-corp.html">HID's</a> prox cards, which is what MSU's ID cards are, is PVC -- Polyvinyl Chloride, a petrochemical. PVC begins its life as a byproduct during the oil refining process.</div>
+				<!-- add a link to something about PVC and its disposability/lack thereof-->
+				<div id="blue-rect-2">SILICON WAFERS AND INTEGRATED CIRCUITS</div>
+				<div id="blue-rect-text-2">It's nearly impossible to figure out what type of chip/integrated circuit is inside a given HID smart/prox card. At the same time, it's likely that it's a chip using the <a href="http://arm.com">ARM architecture</a>. While the architecture/design belongs to ARM, the IP is liecensed to various manufacturers all over the world, including, probably most prominently, Taiwan Semiconductor Manufacturing Company. </div> 
+			</div>
 				
 		</div>
 
 		<div class="right-sidebar-home">	
 			<div class="vertical-container">
-				<div id="triangle-topright">
-				<br>
-				</div>
 			</div>
 		</div>
 
@@ -220,10 +249,14 @@
 
 <script type="text/javascript">
 
-$('#blue-circle').click(function() {
-     $('.blue-square').fadeOut();
-  }, function() {
-     $('.blue-square').fadeIn();
+$('#blue-rect').click(function() {
+	 console.log('raaar');
+     $('#blue-rect-text').fadeToggle("slow", "linear");
+  });
+
+$('#blue-rect-2').click(function() {
+	 console.log('raaar');
+     $('#blue-rect-text-2').fadeToggle("slow", "linear");
   });
 
 

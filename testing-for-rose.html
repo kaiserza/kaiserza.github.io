@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flexbox random assortment</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<style>
+
+		body {
+			box-sizing: border-box;
+		}
+
+		#container {
+			display:flex;
+			flex-flow: row wrap; 
+			width: 100%;
+		}
+
+		#div01 {
+			background-color: blue;
+			width:25%;
+		}
+
+		#div02 {
+			background-color: deepskyblue;
+		}
+
+		#div03 {
+			background-color: red;
+		}
+
+		#div04 {
+			background-color: orange;
+		}
+
+		#div05 {
+			background-color: brown;
+		}
+
+		#div05 {
+			background-color: pink;
+		}
+
+		#div06 {
+			background-color: violet;
+		}
+
+		#div07 {
+			background-color: tan;
+		}
+
+		#div08 {
+			background-color: lightgray;
+		}
+
+		#div09 {
+			background-color: gray;
+		}
+
+		#div10 {
+			background-color: navy;
+		}
+
+		#div11 {
+			background-color: maroon;
+		}
+
+		.big {
+			padding:4em;
+			flex:1;
+			flex: 1 0 25%;
+		}
+
+
+
+
+	</style>
+
+		<!-- generate random number
+		check to see if that number has already been used
+		if yes... start over? for loop?
+		if no, make that number "order:" 
+		OR
+		Generate an array full of numbers randomly arranged
+		from 1 to 11
+		THEN add that array entry to the order property
+		-->
+
+	<script>
+	$(document).ready(function() { 
+
+
+
+		for (var a=[],i=0;i<11;++i) a[i]=i;
+
+		function shuffle(array) {
+		  var tmp, current, top = array.length;
+		  if(top) while(--top) {
+		    current = Math.floor(Math.random() * (top + 1));
+		    tmp = array[current];
+		    array[current] = array[top];
+		    array[top] = tmp;
+		  }
+		  return array;
+		}
+
+		a = shuffle(a);
+		console.log(a);
+
+
+		$('#div01').css("order" , ""+a[0]+"");
+		console.log(a[0]);
+		$('#div02').css("order" , ""+a[1]+"");
+		$('#div03').css("order" , ""+a[2]+"");
+		$('#div04').css("order" , ""+a[3]+"");
+		$('#div05').css("order" , ""+a[4]+"");
+		$('#div06').css("order" , ""+a[5]+"");
+		$('#div07').css("order" , ""+a[6]+"");
+		$('#div08').css("order" , ""+a[7]+"");
+		$('#div09').css("order" , ""+a[8]+"");
+		$('#div10').css("order" , ""+a[9]+"");
+		$('#div11').css("order" , ""+a[10]+"");
+
+
+	})
+
+	</script>
+
+
+</head>
+<body>
+
+<div id="container"> 
+
+
+	<div id = "div01" class="big">
+	</div>
+
+	<div id = "div02" class="big">
+	</div>
+
+	<div id = "div03" class="big">
+	</div>
+
+	<div id = "div04" class="big">
+	</div>
+
+	<div id = "div05" class="big">
+	</div>
+
+	<div id = "div06" class="big">
+	</div>
+
+	<div id = "div07" class="big">
+	</div>
+
+	<div id = "div08" class="big">
+	</div>
+
+	<div id = "div09" class="big">
+	</div>
+
+	<div id = "div10" class="big">
+	</div>
+
+	<div id = "div11" class="big">
+	</div>
+
+
+</div>
+
+</body>
+</html>

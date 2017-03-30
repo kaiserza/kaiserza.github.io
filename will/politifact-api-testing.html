@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+//
+// Okay, here's a basic jQuery widget walkthrough.
+// 1.) Set up your function to run when the document is finished loading.
+//
+$(document).ready(function(){
+    //
+    // 2.) When the document is ready, load some JSON from our API. JSON is our friend.
+    //
+    $.getJSON("http://www.politifact.com/api/statements/truth-o-meter/people/donald-trump/json/?n=10&callback=?",
+        //
+        // 3.) Once we have our JSON loaded, let's do a function with it. 
+        // We'll name our loaded JSON data ... 'data'. You know, easy.
+        //
+        function(data) {
+            //
+            // 4.) Let's create a variable to hold our HTML. 
+            // We'll call our variable ... pfHTML, and put a nice header in it.
+            //
+            var pfHTML = '<h1>Recent statements at PolitiFact</h1>';
+            //
+            // 5.) Now, we need to loop through each item in our JSON data.
+            // We're asking for 3 items now, but this works for 1 or 100.
+            //
+            $.each(data, function(index,item){ // index is the count; item is the data.
+                //
+                // 6.) For each statement, grab the headline and URL.
+                // Append this string of HTML to the pfHTML variable for use later.
+                //
+                index = index+1; // The index starts with 0; add 1 to make it human-friendly
+                pfHTML += '<h3><a href="'+item.statement_url+'">'+index+'.) '+item.ruling_headline+'</a>: '+item.ruling.ruling+'</h3>';
+
+                console.log(item);
+                console.log(item.ruling.ruling);
+            });
+            //
+            // 7.) Take all of the HTML written to pfHTML and append it a DIV on the page.
+            // Specifically, append it to the DIV with the ID _pfTarget.
+            //
+            $('#_pfTarget').append(pfHTML);
+        }
+    );
+});
+</script>
+</head>
+
+<body>
+
+
+<div id="_pfTarget"><!-- This is the div where your widget will display --></div>
+
+
+
+
+</body>
+</html>

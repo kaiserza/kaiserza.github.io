@@ -14,7 +14,7 @@ body {
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
   left: 0;
   z-index: 20;
@@ -52,6 +52,10 @@ body {
 .navbar-brand-2 :active {
     color:white;
     text-decoration: underline;
+}
+
+.navbar-static-top {
+  margin-bottom:0px;
 }
 
 
@@ -157,6 +161,7 @@ body {
   /* Navbar positioning foo */
   .navbar-wrapper {
     position:fixed;
+    margin-bottom:0px;
     /*margin-top: 0px;*/
   }
   .navbar-wrapper .container {

@@ -32,8 +32,11 @@ $(document).ready(function(){
 				  var wind_mph = parsed_json['current_observation']['wind_mph'];
 				  var weather = parsed_json['current_observation']['weather'];
 
+				  var myWeatherWord = weather.split(" ").pop();
+				  console.log("the last word of the conditions is " + myWeatherWord);
+
 				  //use jquery to change the background color of the html document based on the temp 
-				  $("body").css("background-color", "rgb(" + (Math.round(temp_f*2.5)) + ",90,90)");
+				  // $("body").css("background-color", "rgb(" + (Math.round(temp_f*2.5)) + ",90,90)");
 				  
 				  //log the location to check to see that the api returned something
 				  console.log("you are in " + location);
@@ -48,11 +51,11 @@ $(document).ready(function(){
 				  	wind_mph=1;
 				  }
 
-				  console.log(wind_mph);
+				  // console.log(wind_mph);
 
 				  //Send the conditions at the user's lat-lon to the second function to do the spotify requests
 				  //myFunction2(weather, wind_mph, temp_f);
-				  myFunction3(weather, wind_mph, temp_f);
+				  myFunction3(myWeatherWord, wind_mph, temp_f);
 
 			  }
 			});
@@ -60,25 +63,51 @@ $(document).ready(function(){
 
 
 		function myFunction3(weatherCondition, windy, tempy) {
+			console.log(weatherCondition);
 			$.ajax({
 				url:"https://words.bighugelabs.com/api/2/7a63887bd3d6f4e542ff5b845c80cc80/"+weatherCondition+"/json",
 				type: "GET",
 				dataType: "json",
 				success: function(parsed_json) {
+					console.log(parsed_json);
 
-					var nounList = parsed_json['noun']['syn'];
-					console.log("the length of the list of nouns is " + nounList.length);
-					var noun = parsed_json['noun']['syn'][Math.floor(Math.random()*(nounList.length))];
+					// if ((parsed_json['noun'])!=undefined) {
+					// 	var nounList = parsed_json['noun']['syn'];
+					// 	console.log("the length of the list of nouns is " + nounList.length);
+					// 	var noun = parsed_json['noun']['syn'][Math.floor(Math.random()*(nounList.length))];
+					// 	console.log("a noun synonym is " + noun);
+					// } else if ((parsed_json['adjective'])!=undefined) {
+					// 	var adjectiveList = parsed_json['adjective']['syn'];
+					// 	var adjective = parsed_json['adjective']['syn'][Math.floor(Math.random()*(adjectiveList.length))];
+					// 	//log to the console the synonyms just to make sure they are coming through. 
+					// 	console.log("an adjective synonym is " + adjective);
+					// } 
 
-					var adjectiveList = parsed_json['adjective']['syn'];
-					var adjective = parsed_json['adjective']['syn'][Math.floor(Math.random()*(adjectiveList.length))];
+
+					if (((parsed_json['noun'])!=undefined) && ((parsed_json['adjective'])!=undefined)) {
+						var nounList = parsed_json['noun']['syn'];
+						var adjectiveList = parsed_json['adjective']['syn'];
+						var noun = parsed_json['noun']['syn'][Math.floor(Math.random()*(nounList.length))];
+						var adjective = parsed_json['adjective']['syn'][Math.floor(Math.random()*(adjectiveList.length))];
+						RandomNounOrAdj(noun, adjective);
+					} else if ((parsed_json['noun'])==undefined) {
+						var adjectiveList1 = parsed_json['adjective']['syn'];
+						var adjective1 = parsed_json['adjective']['syn'][Math.floor(Math.random()*(adjectiveList1.length))];
+						myFunction2(adjective1, windy, tempy);
+					} else if ((parsed_json['adjective'])==undefined) {
+						var nounList1 = parsed_json['noun']['syn'];
+						var noun1 = parsed_json['noun']['syn'][Math.floor(Math.random()*(nounList1.length))];
+						myFunction2(noun1, windy, tempy);
+					}
 					
-					//log to the console the synonyms just to make sure they are coming through. 
-					console.log("a noun synonym is " + noun);
-					console.log("an adjective synonym is " + adjective);
+
+					//if nouns=0 do stuff
+					//else if adjectives=0 do stuff
+					//else if nouns && adjectives both greater than 0 do other stuff
+
 
 					//call the function RandomNounOrAdj, which is defined below, and pass to it two variables: noun and adjective
-					RandomNounOrAdj(noun, adjective);
+					// RandomNounOrAdj(noun, adjective);
 
 					function RandomNounOrAdj(wordNoun, wordAdjective) {
 						var theNum = Math.round(Math.random());

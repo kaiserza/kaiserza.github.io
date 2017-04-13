@@ -16,12 +16,33 @@
 		font-size: 3em;
 		color:white;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		margin:0;
+		padding:3em;
 	}
 
 	#songTitle a{
 		text-decoration: underline;
 		color:white;
+		margin:0;
 	}
+
+	.fade {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2bcad8+0,f1ff89+100 */
+		background: #2bcad8; /* Old browsers */
+		background: -moz-linear-gradient(top, #2bcad8 0%, #f1ff89 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #2bcad8 0%,#f1ff89 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #2bcad8 0%,#f1ff89 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bcad8', endColorstr='#f1ff89',GradientType=0 ); /* IE6-9 */
+
+		width:100%;
+		height:100vh;
+		margin:0;
+	}
+
+	body {
+		margin:0;
+	}
+
 	</style>
 
 
@@ -30,7 +51,7 @@
 <body>
 
 
-<div class="container">
+<div class="fade container">
 
 	<div class="song-and-artist">
 	<p id="songTitle"></p>

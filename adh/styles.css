@@ -1,0 +1,39 @@
+body {
+	background-color: lightgray;
+}
+
+.container {
+	padding-top:3em;
+}
+
+.container a {
+	color:blue;
+}
+
+.row h2 {
+	text-align: center;
+}
+
+.row img {
+	display:block;
+	margin:auto;
+}
+
+.headline {
+	padding-bottom:3em;
+}
+
+.links {
+	padding-bottom:2em;
+}
+
+.topbar {
+	text-align: center;
+	color:red;
+	font-size: 1.2em;
+	font-family:"Courier New", courier, monospace;
+}
+
+.firstrow {
+	margin-top: 6em;
+}

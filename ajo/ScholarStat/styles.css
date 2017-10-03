@@ -1,0 +1,112 @@
+/*colors
+red: a43023
+blue: 84aaa1
+green: b7bc33
+;*/
+
+.monospacer {
+	font-family: 'Inconsolata', monospace;
+}
+
+.regular-norm {
+	font-family: 'Libre Franklin', sans-serif;
+}
+
+.bold-norm {
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: bold;
+}
+
+.nav-link {
+	font-family: 'Inconsolata', monospace;
+	letter-spacing: 0.04em;
+}
+
+.nav-item {
+	letter-spacing: 0.04em;
+}
+
+.active {
+	
+}
+
+.carousel-item h1 {
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: bold;
+}
+
+.carousel-item p {
+	font-family: 'Inconsolata', monospace;
+	letter-spacing: 0.04em;
+}
+
+.carousel-item-left h1 {
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: bold;
+}
+
+.carousel-item-left p {
+	font-family: 'Inconsolata', monospace;
+	letter-spacing: 0.04em;
+}
+
+.carousel-item-next h1 {
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: bold;
+}
+
+.carousel-item-next p {
+	font-family: 'Inconsolata', monospace;
+	letter-spacing: 0.04em;
+}
+
+#carousel-item-1 {
+	background-image: url('img/ticker-screenshot-2.jpg');
+	background-size: cover;
+}
+
+#carousel-item-2 {
+	background-image: url('img/large-carousel-image.jpg');
+	background-size: cover;
+}
+
+#carousel-item-3 {
+	background-image: url('img/large-carousel-image-2.jpg');
+	background-size: cover;
+}
+
+.bg-dark {
+	background-color: black !important
+}
+
+.navbar-dark .navbar-nav .nav-link:hover  {
+	color:#84aaa1;
+}
+
+.btn-primary {
+	background-color: #b7bc33;
+	border-color:#b7bc33;
+}
+
+.btn-primary:hover {
+	background-color: #a43023;
+	border-color: #a43023;
+}
+
+.body-copy-monospace {
+	font-family: 'Inconsolata', monospace;
+	letter-spacing: 0.04em;
+}
+
+.first-feature {
+	padding-top:3em;
+}
+
+
+@media (min-width: 40em) {
+
+	.body-copy-monospace {
+		font-size:1.25rem;
+	}
+
+}

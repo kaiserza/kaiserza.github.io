@@ -455,7 +455,7 @@ footer a, footer a:visited {
 
 @media (min-width: 768px) {
 	.big-intro-text {
-	font-size:1.5em;
+		font-size:1.5em;
 	}
 }
 

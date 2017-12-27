@@ -102,6 +102,16 @@ green: b7bc33
 	padding-top:3em;
 }
 
+.submit-button {
+	border:none;
+	background-color: #b7bc33;
+	color: white;
+}
+
+.submit-button:hover {
+	background-color: #a43023;
+}
+
 
 @media (min-width: 40em) {
 

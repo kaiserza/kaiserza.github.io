@@ -1,0 +1,304 @@
+.big-image {
+	margin:0;
+}
+
+.keyword {
+	font-size:inherit;
+	color: blue;
+}
+
+.keyword a, .keyword a:visited {
+	font-size:inherit;
+	color:blue;
+}
+
+.section-divider {
+	margin-bottom:4em;
+}
+
+.aligned-image {
+	padding-top:1em;
+	margin:0.5em;
+}
+
+.big-image-test {
+	background-image:url('img/Intro-b2.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top:3em;
+	margin-bottom:3em;
+	width:100%;
+}
+
+.big-image-test-2 {
+	background-image:url('img/demo01.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top:3em;
+	margin-bottom:3em;
+	width:100%;
+}
+
+.big-image-temp {
+	background-image:url('img/touching-temp-sensor.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top:3em;
+	margin-bottom:3em;
+	width:100%;
+}
+
+
+.big-image-paul {
+	background-image:url('img/paul.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top:3em;
+	margin-bottom:3em;
+	width:100%;
+}
+
+
+.big-image-sofie-ret {
+	background-image:url('img/sofie-retrieval.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top:3em;
+	margin-bottom:3em;
+	width:100%;
+}
+
+.big-image-entering-booth {
+	background-image:url('img/entering-booth-02.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top:3em;
+	margin-bottom:3em;
+	width:100%;
+}
+
+.home-header {
+	background-image:url('img/home-image.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top:0em;
+	margin-bottom:3em;
+	width:100%;
+}
+
+.dreamcomp {
+	background-image:url('img/gifgifgif.gif');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top:0em;
+	margin-bottom:3em;
+	width:100%;
+}
+
+.break-image {
+	margin-top:4em;
+	margin-bottom:4em;
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.paragraph-before-video {
+	padding-bottom:2em;
+}
+
+
+@media (min-width: 768px) {
+	.big-image-test {
+		margin-top:3em;
+		margin-bottom:3em;
+		width:100%;
+		margin-left:0;
+		margin-right:0;
+		padding:0;
+		background-image:url('img/Intro-b2.jpg');
+		min-height:40em;
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+}
+
+.dark {
+	background-color: black;
+}
+
+.topoutline {
+	background-color: white;
+	border-bottom-style:solid;
+	border-bottom-color: black;
+	border-bottom-width: 2px
+}
+
+.blackdrawer {
+	background-color: white;
+	border-style:solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+.blackdrawer a {
+	color:black;
+}
+
+.blackdrawer a:hover {
+	color:black;
+	text-decoration: underline;
+}
+
+#reversedhamburger {
+	background-color: white;
+	color:black;
+}
+
+header a.funoutlinebutton {
+	background-color: white;
+	color:black;
+}
+
+header a.funoutlinebutton:hover {
+	background-color: white;
+	color:black;
+	text-decoration:underline;
+}
+
+#content-section-1 {
+	margin-top:2em;
+}
+
+#content-section-2 {
+	margin-top:1.5em;
+}
+
+.middle-image-small {
+	margin-top:1.5em;
+}
+
+.numbered-aspects {
+	margin-top:2em;
+}
+
+.image-with-room {
+	margin-left:0;
+	margin-right:0;
+	margin-top:1.5em;
+	margin-bottom: 1.5em;
+}
+
+.footer-text {
+	font-size:0.75em;
+}
+
+.footer-text a {
+	color:black;
+	text-decoration: underline;
+	font-size:1em;
+}
+
+.last-section {
+	padding-bottom:5em;
+}
+
+.book-background {
+	background-image:url('img/book.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom:3em;
+	width:100%;
+}
+
+.machine-background {
+	background-image:url('img/two-retrieve.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom:3em;
+	width:100%;
+}
+
+.scholarship-background {
+	background-image:url('img/other-schol-header.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom:3em;
+	width:100%;
+}
+
+.last-div-on-page {
+	margin-bottom:5em;
+}
+
+@media (min-width: 768px) {
+	.book-background {
+		width:100%;
+		margin-left:0;
+		margin-right:0;
+		padding:0;
+		background-image:url('img/book.jpg');
+		min-height:40em;
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+}
+
+
+footer {
+	color:black;
+	background-color:rgba(255, 255, 255, 0.8);
+	padding-top:1em;
+	padding-bottom:1em;
+	margin:0;
+	border-top-color:black;
+	border-top-width:2px;
+	border-top-style:solid;
+}
+
+footer a, footer a:visited {
+	color:blue;
+}
+
+@media (min-width: 768px) {
+	.big-intro-text {
+	font-size:1.5em;
+	}
+}

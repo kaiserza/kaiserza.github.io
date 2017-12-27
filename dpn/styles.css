@@ -21,31 +21,81 @@
 	margin:0.5em;
 }
 
+.dr-norway-quote {
+	font-family: 'EB Garamond', serif;
+}
+
+.project-title {
+	margin-bottom:2em;
+}
+
+/* Large images */
+
+
+@media (min-width: 1024px) {
+	.big-image-test {
+		background-image:url('img/Intro-b2.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-top:3em;
+		margin-bottom:3em;
+		width:100%;
+	}
+}
+
+
 .big-image-test {
 	background-image:url('img/Intro-b2.jpg');
-	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-top:3em;
 	margin-bottom:3em;
 	width:100%;
+}
+
+
+@media (min-width: 1024px) {
+	.big-image-test-2 {
+		background-image:url('img/demo01.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-top:3em;
+		margin-bottom:3em;
+		width:100%;
+	}
 }
 
 .big-image-test-2 {
 	background-image:url('img/demo01.jpg');
-	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-top:3em;
 	margin-bottom:3em;
 	width:100%;
+}
+
+
+@media (min-width: 1024px) {
+	.big-image-temp {
+		background-image:url('img/touching-temp-sensor.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-top:3em;
+		margin-bottom:3em;
+		width:100%;
+	}
 }
 
 .big-image-temp {
 	background-image:url('img/touching-temp-sensor.jpg');
-	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -55,32 +105,70 @@
 }
 
 
+@media (min-width: 1024px) {
+	.big-image-paul {
+		background-image:url('img/paul.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-top:3em;
+		margin-bottom:3em;
+		width:100%;
+	}	
+}
+
 .big-image-paul {
 	background-image:url('img/paul.jpg');
-	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-top:3em;
 	margin-bottom:3em;
 	width:100%;
+}
+
+
+@media (min-width: 1024px) {
+	.big-image-sofie-ret {
+		background-image:url('img/sofie-retrieval.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-top:3em;
+		margin-bottom:3em;
+		width:100%;
+	}	
 }
 
 
 .big-image-sofie-ret {
 	background-image:url('img/sofie-retrieval.jpg');
-	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-top:3em;
 	margin-bottom:3em;
 	width:100%;
+}
+
+
+@media (min-width: 1024px) {
+	.big-image-entering-booth {
+		background-image:url('img/entering-booth-02.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-top:3em;
+		margin-bottom:3em;
+		width:100%;
+	}
 }
 
 .big-image-entering-booth {
 	background-image:url('img/entering-booth-02.jpg');
-	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -89,9 +177,21 @@
 	width:100%;
 }
 
+@media (min-width: 1024px) {
+	.home-header {
+		background-image:url('img/home-image.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-top:0em;
+		margin-bottom:3em;
+		width:100%;
+	}	
+}
+
 .home-header {
 	background-image:url('img/home-image.jpg');
-	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -100,9 +200,21 @@
 	width:100%;
 }
 
+@media (min-width: 1024px) {
+	.dreamcomp {
+		background-image:url('img/gifgifgif.gif');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-top:0em;
+		margin-bottom:3em;
+		width:100%;
+	}	
+}
+
 .dreamcomp {
 	background-image:url('img/gifgifgif.gif');
-	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -110,6 +222,75 @@
 	margin-bottom:3em;
 	width:100%;
 }
+
+
+@media (min-width: 1024px) {
+	.book-background {
+		background-image:url('img/book.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom:3em;
+		width:100%;
+	}	
+}
+
+.book-background {
+	background-image:url('img/book.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom:3em;
+	width:100%;
+}
+
+
+@media (min-width: 1024px) {
+	.machine-background {
+		background-image:url('img/two-retrieve.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom:3em;
+		width:100%;
+	}	
+}
+
+.machine-background {
+	background-image:url('img/two-retrieve.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom:3em;
+	width:100%;
+}
+
+
+@media (min-width: 1024px) {
+	.scholarship-background {
+		background-image:url('img/other-schol-header.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom:3em;
+		width:100%;
+	}
+}
+
+.scholarship-background {
+	background-image:url('img/other-schol-header.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom:3em;
+	width:100%;
+}
+
+/* end styles for large images */
+
 
 .break-image {
 	margin-top:4em;
@@ -179,6 +360,11 @@
 	text-decoration: underline;
 }
 
+.blackdrawer a:visited {
+	color:black;
+	text-decoration: underline;
+}
+
 #reversedhamburger {
 	background-color: white;
 	color:black;
@@ -230,36 +416,6 @@ header a.funoutlinebutton:hover {
 
 .last-section {
 	padding-bottom:5em;
-}
-
-.book-background {
-	background-image:url('img/book.jpg');
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-bottom:3em;
-	width:100%;
-}
-
-.machine-background {
-	background-image:url('img/two-retrieve.jpg');
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-bottom:3em;
-	width:100%;
-}
-
-.scholarship-background {
-	background-image:url('img/other-schol-header.jpg');
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-bottom:3em;
-	width:100%;
 }
 
 .last-div-on-page {

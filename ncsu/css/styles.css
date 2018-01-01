@@ -1,0 +1,48 @@
+html, body, div, p, ol, ul, li {
+	font-family: "Times New Roman", Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6, a, a:hover, a:visited {
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, sans-serif;
+	font-weight:normal;
+}
+
+p em {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+}
+
+.project-block {
+	margin-top:2em;
+}
+
+a, a:hover, a:visited {
+	color:blue;
+	text-decoration: underline;
+	transition: none;
+}
+
+.project-image {
+	margin-left:0;
+	margin-right:0;
+}
+
+.video-responsive{
+	margin-top:1.5em;
+	margin-bottom:1em;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.at-end {
+	margin-bottom:3em;
+}

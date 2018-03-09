@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CitationBomb</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://gitcdn.link/repo/Chalarangelo/mini.css/master/dist/mini-default.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="sticky row topoutline">
+	    <div class="col-sm-12 col-md-12 col-lg-12">
+	    <!-- <div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1"> -->
+	      <label for="drawer-checkbox" class="button drawer-toggle" id="reversedhamburger"></label>
+	      <a href="#citationbomb-top" class="button hidden-sm funoutlinebutton">CitationBomb</a>
+	      <a href="#instructions" class="button hidden-sm funoutlinebutton">Instructions</a>
+		</div>
+  </header>
+<!--  This is the hamburger menu for mobile screens. Standard navigation, really!  -->
+  <input type="checkbox" id="drawer-checkbox">
+  <nav class="drawer blackdrawer hidden-md hidden-lg">
+    <label for="drawer-checkbox" class="close"></label>
+    <h4><a href="#citationbomb-top">CitationBomb</a></h4>
+    <h4><a href="#instructions">Instructions</a></h4>
+  </nav>
+
+
+<div class="container">
+
+	<div class="row" id="citationbomb-top">
+
+		<div class="col-lg-6 col-lg-offset-3">
+
+			<h1 class="bigish">CitationBomb</h1>
+			<p class="big">CitationBomb is a tactical and symbolic intervention that seeks to subvert the tyranny of academic metrification.</p>
+			<a href="citations.zip" download="citations.zip"><button class="large colorful big">Download</button></a>
+			<p class="body-copy-before-image">Download the .zip file to your computer. Double click to open the .zip archive. Once it is unzipped, you should see the &ldquo;citations.app&rdquo; application and icon. You should now be able to open the application. See the video below for more details.</p> 
+
+
+			<div class="video-responsive">
+			<figure>
+			<iframe src="https://player.vimeo.com/video/258704240" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/258704240">CitationBomb Demo</a> from <a href="https://vimeo.com/zacharykaiser">Zachary Kaiser</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+			</figure>
+			</div>
+
+			<p><em>Right now CitationBomb runs only on MacOS X 10.11 and above. We are working on a PC compatible version. Running into a bug? Get in touch: citationbombers [at] gmail.com</em></p>
+			<h2 class="second-level" id="instructions">Instructions</h2>
+			<ul>
+				<li>Click &ldquo;Download&rdquo; to download the CitationBomb.zip file.</li>
+				<li>Save the .zip file to the directory of your choosing.
+				</li>
+				<li>Unzip the .zip file. It should reveal the program along with its icon.</li>
+				<li>Open the CitationBomb program by double-clicking the &ldquo;citations&rdquo; icon.
+					<ul>
+						<li>You might get an alert like this: <br>
+							<img src="no-id-alert.jpeg">
+						</li>
+						<li>If that's the case, do the following:
+							<ul>
+								<li>Go to System Preferences > Security &amp; Privacy
+								</li>
+								<li>On the General Tab click the little lock in the lower left corner to unlock the general preference pane. 
+								</li>
+								<li>If you are on OS X 10.11, select the Anywhere radio button beneath Allow applications downloaded from.<br>
+									<img src="os1011.png">
+								</li>
+								<li>If you are on OS X 10.12 and above, select the Mac App Store and Identified Developers radio button, and then select, Open Anyway. <br>
+									<img src="blocked_osx_1012.jpg">
+								</li>
+							</ul>
+						</li>
+						<li>Once you've done this, you can control+click or two-finger-click (on trackpad) on the icon, and select &ldquo;open,&rdquo; then confirm that you would like to open the application. <br><br>
+							<img src="open-anyway-alert.jpeg">
+						</li>
+					</ul>
+				</li>
+				<li>The program will likely take a minute or two to open, but you may need to click the icon in your dock if the interface does not appear.</li>
+				<li>In the form field, enter the title of a paper you have cited in the paper on which you are working.</li>
+				<li><em>CitationBomb</em> finds the 8 most "related" papers (per Google Scholar).</li>
+				<li><em>CitationBomb</em> then outputs a Word document with these citations in small, white text.</li>
+				<li>Save this Word document to the directory &#40;folder&#41; of your choice.</li>
+				<li>The Word document will appear as though it is blank. But, hit command+A to select all the text on the page, and you will see that it contains a series of lines set in 4-point, white type. </li>
+				<li>Hit command+C to copy these from the Word doc and then return to your paper and paste them at the end of your references section.</li>
+				<li>When your paper is published, Google will eventually index your paper in Google Scholar. When it does so, I think that the following will happen:
+					<ul>
+						<li>It will include all the citations (including those in white, because it is reading all text on the page, not just what is visible).</li>
+						<li>The more users do this, the more Google Scholar will become overflowed with citations.</li>
+						<li>This will make it difficult for the algorithms to make sense of influence or impact.</li>
+					</ul>
+				</li>
+			</ul>
+				
+			<p class="note">2018 Zach Kaiser and Culture Industry &lsqb;dot&rsqb; Club. Many, many thanks to comrade Gabi Schaffzin for his help on this project.</p>
+
+		</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

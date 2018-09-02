@@ -55,13 +55,14 @@ header a.funoutlinebutton:hover {
 
 .blackdrawer {
 	background-color: white;
-	border-style:solid;
+	border-style: solid;
 	border-color: black;
 	border-width: 2px;
 }
 
-.blackdrawer a {
+.blackdrawer h4 a {
 	color:black;
+	background-color: white;
 }
 
 .blackdrawer a:hover {

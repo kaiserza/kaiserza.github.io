@@ -344,23 +344,23 @@
 	border-bottom-width: 2px
 }
 
-.blackdrawer {
+[type="checkbox"].drawer+* {
 	background-color: white;
 	border-style:solid;
 	border-color: black;
 	border-width: 2px;
 }
 
-.blackdrawer a {
+.blackdrawer h4 a {
 	color:black;
 }
 
-.blackdrawer a:hover {
+.blackdrawer h4 a:hover {
 	color:black;
 	text-decoration: underline;
 }
 
-.blackdrawer a:visited {
+.blackdrawer h4 a:visited {
 	color:black;
 	text-decoration: underline;
 }

@@ -2,10 +2,9 @@
 <html>
 <head>
 	<title>CitationBomb</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.0/dist/mini-default.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.0/mini-default.min.css">
 	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -20,7 +19,7 @@
 <!--  This is the hamburger menu for mobile screens. Standard navigation, really!  -->
   <input type="checkbox" id="drawer-control" class="drawer">
   <nav class="blackdrawer hidden-md hidden-lg">
-    <label for="drawer-control" class="close"></label>
+    <label for="drawer-control" class="drawer-close"></label>
     <h4><a href="#citationbomb-top">CitationBomb</a></h4>
     <h4><a href="#instructions">Instructions</a></h4>
   </nav>
@@ -28,24 +27,25 @@
 
 <div class="container">
 
-	<div class="row" id="citationbomb-top">
+	<div class="row">
 
-		<div class="col-md-6 col-md-offset-3">
+		<div class="col-sm-12 col-md-6 col-md-offset-3">
 
-			<h1 class="bigish">CitationBomb</h1>
+			<h1 class="bigish hidden-sm">CitationBomb</h1>
+			<h1 class="hidden-md hidden-lg">CitationBomb</h1>
 			<p class="big">CitationBomb is a tactical and symbolic intervention that seeks to subvert the tyranny of academic metrification.</p>
 			<a href="citations.zip" download="citations.zip"><button class="large colorful big">Download</button></a>
 			<p class="body-copy-before-image">Download the .zip file to your computer. Double click to open the .zip archive. Once it is unzipped, you should see the &ldquo;citations.app&rdquo; application and icon. You should now be able to open the application. See the video below for more details.</p> 
 
 
 			<div class="video-responsive">
-			<figure>
-			<iframe src="https://player.vimeo.com/video/258704240" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/258704240">CitationBomb Demo</a> from <a href="https://vimeo.com/zacharykaiser">Zachary Kaiser</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-			</figure>
+				<figure>
+				<iframe src="https://player.vimeo.com/video/258704240" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	<p><a href="https://vimeo.com/258704240">CitationBomb Demo</a> from <a href="https://vimeo.com/zacharykaiser">Zachary Kaiser</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+				</figure>
 			</div>
 
-			<p><em>Right now CitationBomb runs only on MacOS X 10.11 and above. We are working on a PC compatible version. Running into a bug? Get in touch: citationbombers [at] gmail.com</em></p>
+			<p><em>Right now CitationBomb runs only on MacOS X 10.11 and above. We are working on a PC compatible version. Running into a bug? Get in touch: citationbombers &lsqb;at&rsqb; gmail.com</em></p>
 			<h2 class="second-level" id="instructions">Instructions</h2>
 			<ul>
 				<li>Click &ldquo;Download&rdquo; to download the CitationBomb.zip file.</li>
@@ -99,6 +99,9 @@
 	</div>
 
 </div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 </body>
 </html>

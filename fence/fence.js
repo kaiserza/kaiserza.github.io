@@ -43,8 +43,29 @@ const fenceA = new CircularGeofenceRegion({
   name: 'myfence',
   latitude: 42.7827129,
   longitude: -84.4744707,
-  radius: 500 // meters
+  radius: 100 // meters
 });
+
+const fenceROCK = new CircularGeofenceRegion({
+  name: 'theRock',
+  latitude: 42.728130,
+  longitude: -84.477567,
+  radius: 100 // meters
+})
+
+const fenceBROAD = new CircularGeofenceRegion({
+  name: 'theBroad',
+  latitude: 42.732892,
+  longitude: -84.476331,
+  radius: 100 // meters
+})
+
+const fenceSTARB = new CircularGeofenceRegion({
+  name: 'starbucksWells',
+  latitude: 42.727679,
+  longitude: -84.481677,
+  radius: 100 //meters
+})
 
 const fenceB = new SquareGeofenceRegion({
   name: 'myfence',
@@ -53,19 +74,54 @@ const fenceB = new SquareGeofenceRegion({
   axis: 500 // meters in all 4 directions
 })
 
-const fences = [fenceA, fenceB]
+const fences = [fenceA];
+const fences2 = [fenceROCK];
+const fences3 = [fenceBROAD];
+const fences4 = [fenceSTARB];
 const options = {}
 
 navigator.geolocation.watchPosition(({coords}) => {
   for (const fence of fences) {
-    const lat = coords.latitude
-    const lon = coords.longitude
+    const lat = coords.latitude;
+    const lon = coords.longitude;
 
     if (fence.inside(lat, lon)) {
-      // do some logic
+      window.alert("KRESGE");
+      console.log("KRESGE");
     }
     else {
       console.log("meow");
     }
   }
+
+  for (const fence of fences2) {
+      const lat = coords.latitude;
+      const lon = coords.longitude;
+
+      if (fence.inside(lat, lon)) {
+        window.alert("ROCK");
+        console.log("ROCK");
+      }
+  }
+
+  for (const fence of fences3) {
+      const lat = coords.latitude;
+      const lon = coords.longitude;
+
+      if (fence.inside(lat, lon)) {
+        window.alert("BROAD");
+        console.log("BROAD");
+      }
+  }
+
+  for (const fence of fences4) {
+      const lat = coords.latitude;
+      const lon = coords.longitude;
+
+      if (fence.inside(lat, lon)) {
+        window.alert("STARBUCKS");
+        console.log("STARBUCKS");
+      }
+  }
+
 }, console.error, options);

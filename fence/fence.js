@@ -1,4 +1,4 @@
-navigator.geolocation.getCurrentPosition(success, error, options);
+navigator.geolocation.getCurrentPosition(success);
 
 function success(pos){
   var crd = pos.coords;
@@ -41,16 +41,16 @@ class SquareGeofenceRegion {
 
 const fenceA = new CircularGeofenceRegion({
   name: 'myfence',
-  latitude: 59.345635,
-  longitude: 18.059707,
-  radius: 1000 // meters
+  latitude: 42.7827129,
+  longitude: -84.4744707,
+  radius: 500 // meters
 });
 
 const fenceB = new SquareGeofenceRegion({
   name: 'myfence',
-  latitude: 59.345635,
-  longitude: 18.059707,
-  axis: 1000 // meters in all 4 directions
+  latitude: 42.7827129,
+  longitude: -84.4744707,
+  axis: 500 // meters in all 4 directions
 })
 
 const fences = [fenceA, fenceB]
@@ -63,6 +63,9 @@ navigator.geolocation.watchPosition(({coords}) => {
 
     if (fence.inside(lat, lon)) {
       // do some logic
+    }
+    else {
+      console.log("meow");
     }
   }
 }, console.error, options);

@@ -2,9 +2,62 @@ navigator.geolocation.getCurrentPosition(success);
 
 function success(pos){
   var crd = pos.coords;
-  console.log(crd);
+  var latitude1 = pos.coords.latitude;
+  var longitude1 = pos.coords.longitude;
+  console.log(latitude1 + " , " + longitude1);
+  // console.log(crd);
+  initMap(latitude1, longitude1);
 }
 
+function initMap(lat1, lon1){
+  // console.log(lat1 + "..." + lon1);
+  var myLatLng = {lat: lat1, lng: lon1}; 
+  var kresgeLatLng = {lat: 42.728344, lng: -84.474513};
+  var rockLatLng = {lat: 42.728130, lng: -84.477567};
+  var broadLatLng = {lat: 42.732892, lng: -84.476331};
+  var wellsLatLng = {lat: 42.727679, lng: -84.481677};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    label: "YOU ARE HERE",
+    map: map,
+    title: 'Hello World!'
+  });
+
+  var markerKresge = new google.maps.Marker({
+    position: kresgeLatLng,
+    label: "KRESGE",
+    map: map,
+    title: 'Hello World!'
+  });
+
+  var markerRock = new google.maps.Marker({
+    position: rockLatLng,
+    label: "THE ROCK",
+    map: map,
+    title: 'Hello World!'
+  });
+
+  var markerBroad = new google.maps.Marker({
+    position: broadLatLng,
+    label: "BROAD",
+    map: map,
+    title: 'Hello World!'
+  });
+
+  var markerWells = new google.maps.Marker({
+    position: wellsLatLng,
+    label: "WELLS SBX",
+    map: map,
+    title: 'Hello World!'
+  });
+
+}
 
 class CircularGeofenceRegion {
   constructor(opts) {
@@ -41,30 +94,30 @@ class SquareGeofenceRegion {
 
 const fenceA = new CircularGeofenceRegion({
   name: 'myfence',
-  latitude: 42.7827129,
-  longitude: -84.4744707,
-  radius: 100 // meters
+  latitude: 42.728344,
+  longitude: -84.474513,
+  radius: 10 // meters
 });
 
 const fenceROCK = new CircularGeofenceRegion({
   name: 'theRock',
   latitude: 42.728130,
   longitude: -84.477567,
-  radius: 100 // meters
+  radius: 10 // meters
 })
 
 const fenceBROAD = new CircularGeofenceRegion({
   name: 'theBroad',
   latitude: 42.732892,
   longitude: -84.476331,
-  radius: 100 // meters
+  radius: 10 // meters
 })
 
 const fenceSTARB = new CircularGeofenceRegion({
   name: 'starbucksWells',
   latitude: 42.727679,
   longitude: -84.481677,
-  radius: 100 //meters
+  radius: 10 //meters
 })
 
 const fenceB = new SquareGeofenceRegion({
@@ -78,9 +131,12 @@ const fences = [fenceA];
 const fences2 = [fenceROCK];
 const fences3 = [fenceBROAD];
 const fences4 = [fenceSTARB];
-const options = {}
+const options = {
+         enableHighAccuracy: true,
+     }
 
 navigator.geolocation.watchPosition(({coords}) => {
+
   for (const fence of fences) {
     const lat = coords.latitude;
     const lon = coords.longitude;
@@ -125,3 +181,11 @@ navigator.geolocation.watchPosition(({coords}) => {
   }
 
 }, console.error, options);
+
+
+
+
+
+
+
+//Google Maps API Key = AIzaSyDHRtKtM_XoeLtCf8gyVeHwNHnH_HjJhXI

@@ -31,28 +31,28 @@ function initMap(lat1, lon1){
 
   var markerKresge = new google.maps.Marker({
     position: kresgeLatLng,
-    label: "KRESGE",
+    label: "LOCKER E-42",
     map: map,
     title: 'Hello World!'
   });
 
   var markerRock = new google.maps.Marker({
     position: rockLatLng,
-    label: "THE ROCK",
+    label: "number",
     map: map,
     title: 'Hello World!'
   });
 
   var markerBroad = new google.maps.Marker({
     position: broadLatLng,
-    label: "BROAD",
+    label: "number",
     map: map,
     title: 'Hello World!'
   });
 
   var markerWells = new google.maps.Marker({
     position: wellsLatLng,
-    label: "WELLS SBX",
+    label: "number",
     map: map,
     title: 'Hello World!'
   });

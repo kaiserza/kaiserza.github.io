@@ -31,7 +31,7 @@ function initMap(lat1, lon1){
 
   var markerKresge = new google.maps.Marker({
     position: kresgeLatLng,
-    label: "LOCKER E-42",
+    label: "KRESGE",
     map: map,
     title: 'Hello World!'
   });
@@ -142,8 +142,8 @@ navigator.geolocation.watchPosition(({coords}) => {
     const lon = coords.longitude;
 
     if (fence.inside(lat, lon)) {
-      window.alert("KRESGE");
-      console.log("KRESGE");
+      window.alert("LOCKER E-42 IN KRESGE. FOR COMBO: GO TO THE ROCK, THE BROAD, AND STARBUCKS IN WELLS. REFRESH WHEN YOU ARRIVE.");
+      // console.log("KRESGE");
     }
     else {
       console.log("meow");
@@ -155,8 +155,8 @@ navigator.geolocation.watchPosition(({coords}) => {
       const lon = coords.longitude;
 
       if (fence.inside(lat, lon)) {
-        window.alert("ROCK");
-        console.log("ROCK");
+        window.alert("1ST NUMBER: 08 // LOCKER E-42 IN KRESGE. GO TO THE BROAD OR WELLS STARBUCKS. REFRESH WHEN YOU ARRIVE.");
+        // console.log("ROCK");
       }
   }
 
@@ -165,8 +165,8 @@ navigator.geolocation.watchPosition(({coords}) => {
       const lon = coords.longitude;
 
       if (fence.inside(lat, lon)) {
-        window.alert("BROAD");
-        console.log("BROAD");
+        window.alert("2ND NUMBER: 10 // LOCKER E-42 IN KRESGE. GO TO THE ROCK OR WELLS STARBUCKS. REFRESH WHEN YOU ARRIVE.");
+        // console.log("BROAD");
       }
   }
 
@@ -175,8 +175,8 @@ navigator.geolocation.watchPosition(({coords}) => {
       const lon = coords.longitude;
 
       if (fence.inside(lat, lon)) {
-        window.alert("STARBUCKS");
-        console.log("STARBUCKS");
+        window.alert("3RD NUMBER: 21 // LOCKER E-42 IN KRESGE. GO TO THE ROCK OR THE BROAD. REFRESH WHEN YOU ARRIVE.");
+        // console.log("STARBUCKS");
       }
   }
 

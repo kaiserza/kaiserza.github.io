@@ -45,6 +45,7 @@ form fieldset input {
 
 form {
 	background-color:#00ff00;
+	padding:0;
 }
 
 form fieldset {
@@ -62,6 +63,11 @@ form fieldset {
 
 .meow a:hover {
 	color:#00ff00;
+}
+
+#submit-form {
+	width:auto;
+	font-size:1em;
 }
 
 

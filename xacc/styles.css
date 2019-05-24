@@ -34,23 +34,27 @@ h1 {
 	letter-spacing: -0.03em;
 }
 
-form fieldset label {
+form label {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color:#00ff00
 }
 
-form fieldset input {
+form input {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 form {
 	background-color:#00ff00;
-	padding:0;
+	padding:10px;
 }
 
 form fieldset {
 	background-color: white;
 	border: none;
+}
+
+form input {
+	width:98%;
 }
 
 .meow {
@@ -68,6 +72,13 @@ form fieldset {
 #submit-form {
 	width:auto;
 	font-size:1em;
+	color:black;
+	background-color:white;
+}
+
+#submit-form:hover {
+	background-color:black;
+	color:white;
 }
 
 
@@ -123,5 +134,19 @@ form fieldset {
 		background-size: cover;
 		background-color: white;
 		background-repeat: no-repeat;
+	}
+
+	button {
+		color:black;
+		font-size:1.5em;
+		text-decoration: underline;
+	}
+
+	.meow {
+		font-size:1.15em;
+	}
+
+	h1 {
+		font-size:2.15em;
 	}
 }
